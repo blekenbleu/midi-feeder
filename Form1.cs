@@ -171,7 +171,6 @@ namespace MidiFeeder
             if (joystickControl.IsButton == false)
             {
                 var percentage = value / 127.0f;
-                long min = 0, max = 0;
                 var axisVal = (int)(percentage * _maxValues[joystickControl.HidUsage]);
                 switch (joystickControl.HidUsage)
                 {
